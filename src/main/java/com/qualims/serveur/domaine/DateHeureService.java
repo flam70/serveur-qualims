@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 public class DateHeureService {
 
 	public static String heureCourante() {
+		System.out.println("Affichage de l'heure courante");
 		LocalTime localTime = LocalTime.now();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         String formattedTime=localTime.format(formatter);
